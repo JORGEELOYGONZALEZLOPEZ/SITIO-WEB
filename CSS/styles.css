@@ -1,0 +1,13 @@
+body{
+    background-color: chartreuse;
+}
+.titulo{
+    text-align: center;
+    background-color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text{
+    text-align: center;
+    background-color: rgb(109, 79, 79);
+    font-family: 'Courier New', Courier, monospace;
+}
