@@ -12,8 +12,8 @@
         <div class="menu">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Leciones</a></li>
-                <li><a href="#">Autocuidado</a></li>
+                <li><a href="#" onclick="suma()">Leciones</a></li>
+                <li><a href="#" onclick="sumaParam(2,14)">Autocuidado</a></li>
                 <li><a href="#">Deportes</a></li>
                 <li><a href="#">Mujer</a></li>
                 <li><a href="#">Bebe</a></li>
@@ -56,7 +56,33 @@
              para restaurar, mantener y mejorar la movilidad y función del cuerpo humano tras lesiones,
               enfermedades o discapacidades, buscando aliviar el dolor, aumentar la fuerza y independencia, 
               y optimizar la calidad de vida. Se enfoca en promover la salud y prevenir limitaciones a través de una evaluación, 
-              diagnóstico y tratamiento personalizado. </h5>
+              diagnóstico y tratamiento personalizado. 
+        </h5>
+        <input type="number" name="val1" id="val1">
+        <input type="number" name="val2" id="val2">
+        <button onclick="calcularinput()">Calcular</button>
+        Mensaje: <input type="text" name="mensaje" id="mensaje">
+    </div>
+    <div id="table">
+        <table>
+            <td>
+                <td></td><input type="number" name="valor1" id="valor1"></td>
+                <td></td><input type="number" name="valor2" id="valor2"></td>
+            </tr>
+            <tr class="numbers">
+                <td><button id="7" onclick="agregarnumeros(7)">7</button><button id="8" agregarnumeros("8")>8</button><button id="9">9</button><button id="division">/</button></td>
+            </tr>
+            <tr class="numbers">
+                <td><button id="4">4</button><button id="5">5</button><button id="6">6</button><button id="multiplicacion">*</button></td>
+            </tr>
+            <tr class="numbers">
+                <td><button id="1">1</button><button id="2">2</button><button id="3">3</button><button id="resta">-</button></td>
+            </tr>
+            <tr class="numbers">
+                <td><button id="punto">.</button><button id="0">0</button><button id="resultado">=</button><button id="suma">+</button></td>
+            </tr>
+        </table>
+
     </div>
     <div id="pie">
         
