@@ -22,7 +22,36 @@ function calcularinput(){
         document.getElementById("mensaje").value="Numero menor";
     }
 }
-function agregarnumeros(){
-    document.getElementById("valor1").value += numero;
-
+// Agregar números al input valor1
+function agregarnumeros(num) {
+    document.getElementById("valor1").value += num;
 }
+
+// Agregar operadores
+document.getElementById("suma").onclick = function () {
+    document.getElementById("valor1").value += "+";
+};
+
+document.getElementById("resta").onclick = function () {
+    document.getElementById("valor1").value += "-";
+};
+
+document.getElementById("multiplicacion").onclick = function () {
+    document.getElementById("valor1").value += "*";
+};
+
+document.getElementById("division").onclick = function () {
+    document.getElementById("valor1").value += "/";
+};
+
+// Calcular resultado
+document.getElementById("resultado").onclick = function () {
+    let expresion = document.getElementById("valor1").value;
+
+    try {
+        let resultado = eval(expresion);
+        document.getElementById("mensaje1").value = resultado;
+    } catch (error) {
+        document.getElementById("mensaje1").value = "Error";
+    }
+};

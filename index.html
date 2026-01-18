@@ -48,7 +48,7 @@
         </div>
     </div>
         <button onclick="mostrarAlerta()">Alerta</button>
-        <script src="JS/funtion.js"></script>
+        
     
     <div id="contenedor2">
         <h2>Que es la fisioterapia</h2>
@@ -63,29 +63,50 @@
         <button onclick="calcularinput()">Calcular</button>
         Mensaje: <input type="text" name="mensaje" id="mensaje">
     </div>
+
+
     <div id="table">
+    <table>
         <table>
-            <td>
-                <td></td><input type="number" name="valor1" id="valor1"></td>
-                <td></td><input type="number" name="valor2" id="valor2"></td>
+            <tr>
+                <td><input type="text" id="valor1"></td>
+                <td>Mensaje: <input type="text" id="mensaje1"></td>
             </tr>
-            <tr class="numbers">
-                <td><button id="7" onclick="agregarnumeros(7)">7</button><button id="8" agregarnumeros("8")>8</button><button id="9">9</button><button id="division">/</button></td>
+            <tr>
+                <td>
+                    <button onclick="agregarnumeros(7)">7</button><button onclick="agregarnumeros(8)">8</button>
+                    <button onclick="agregarnumeros(9)">9</button><button id="division">/</button>
+                </td>
             </tr>
-            <tr class="numbers">
-                <td><button id="4">4</button><button id="5">5</button><button id="6">6</button><button id="multiplicacion">*</button></td>
+
+            <tr>
+                <td>
+                    <button onclick="agregarnumeros(4)">4</button><button onclick="agregarnumeros(5)">5</button>
+                    <button onclick="agregarnumeros(6)">6</button><button id="multiplicacion">*</button>
+                </td>
             </tr>
-            <tr class="numbers">
-                <td><button id="1">1</button><button id="2">2</button><button id="3">3</button><button id="resta">-</button></td>
+
+            <tr>
+                <td>
+                    <button onclick="agregarnumeros(1)">1</button><button onclick="agregarnumeros(2)">2</button>
+                    <button onclick="agregarnumeros(3)">3</button><button id="resta">-</button>
+                </td>
             </tr>
-            <tr class="numbers">
-                <td><button id="punto">.</button><button id="0">0</button><button id="resultado">=</button><button id="suma">+</button></td>
+
+            <tr>
+                <td>
+                    <button onclick="agregarnumeros(0)">0</button>
+                    <button id="resultado">=</button>
+                    <button id="suma">+</button>
+                </td>
             </tr>
         </table>
+    </table>
 
     </div>
     <div id="pie">
         
     </div>
+    <script src="JS/funtion.js"></script>
 </body>
 </html>
