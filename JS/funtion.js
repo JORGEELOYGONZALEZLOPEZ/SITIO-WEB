@@ -43,6 +43,9 @@ document.getElementById("multiplicacion").onclick = function () {
 document.getElementById("division").onclick = function () {
     document.getElementById("valor1").value += "/";
 };
+document.getElementById("borrar").onclick = function () {
+    document.getElementById("valor1").value = " ";
+};
 
 // Calcular resultado
 document.getElementById("resultado").onclick = function () {
@@ -50,8 +53,8 @@ document.getElementById("resultado").onclick = function () {
 
     try {
         let resultado = eval(expresion);
-        document.getElementById("mensaje1").value = resultado;
+        document.getElementById("valor1").value = resultado;
     } catch (error) {
-        document.getElementById("mensaje1").value = "Error";
+        document.getElementById("valor1").value = "Error";
     }
 };

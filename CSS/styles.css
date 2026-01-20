@@ -130,15 +130,52 @@ body{
     background-color: rgb(129, 129, 129);
 }
 #table{
-    height: 45px;
-    width: 96%;
-    margin: 0 auto;
-    padding: 40px;
-    padding: 70px 60px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+}
+#table1 {
+    height: 400px;
+    width: 23%;
+    background: #000000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(4, 252, 0, 0.4);
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 10px 40px;
+}
+
+/* Inputs */
+#table1 input[type="text"] {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    text-align: right;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Botones */
+#table1 button {
+    width: 60px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fc8c04;
+    padding: 10px 10px;
+    color: #fff;
+    margin: 10px;
 }
 .numbers{
-    padding: 20px 20px;
+    
 }
